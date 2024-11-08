@@ -1,0 +1,16 @@
+lda #0
+ldc 5
+sto
+lda #1
+ldc 3
+sto
+lda #2
+lod #0
+ldc 2
+mul
+lod #1
+lod #1
+mul
+add
+sto
+stp

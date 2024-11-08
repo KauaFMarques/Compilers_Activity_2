@@ -1,0 +1,25 @@
+lda #0
+ldc 5 
+sto #0
+
+lod #0
+ldc 100
+ldc 5
+div
+grt
+
+fjp else_block
+lod #0 
+ldc 10
+mul
+wri
+ujp end_if
+
+else_block:
+lod #0
+ldc 10
+div
+wri
+
+end_if:
+stp
